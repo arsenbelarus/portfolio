@@ -1,0 +1,32 @@
+.footerContainer {
+    width: 80%;
+    height: 150px;
+    background-color: #282c34;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerHeader {
+    border: 1px solid;
+
+}
+
+.footerLinks {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: ivory;
+}
+
+.footerCopyright {
+    border: 1px solid;
+    font-size: 0.8rem;
+}
