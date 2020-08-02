@@ -9,6 +9,8 @@ const Contacts = (props: HeaderPropsType) => {
 
     return (
     <div className={style.contactsContainer}>
+        <h2>Contacts</h2>
+       <a id="contacts"/>
         <form className={style.contactsForm}>
             <input type="text" placeholder={"Name"}/>
             <input type="text" placeholder={"E-mail"}/>

@@ -10,7 +10,7 @@ const Portfolio = (props: PortfolioPropsType) => {
     return (
         <div className={style.portfolioContainer}>
             <div className={style.portfolioHeader}>
-                <h1>My Portfolio</h1>
+                <h1><a id="portfolio"/>My Portfolio</h1>
             </div>
             <div className={style.portfolioContent}>
                 <Portfolio1/>

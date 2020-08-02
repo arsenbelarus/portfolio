@@ -8,8 +8,8 @@
 }
 
 .skillLogo {
-    width: 30%;
-    height: 23%;
+    width: 40%;
+    height: 20%;
     border: 1px solid;
 }
 
@@ -17,11 +17,42 @@
     width: 100%;
     border: 1px solid;
     text-align: center;
-    height: fit-content;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 .skillDescription {
-    width: 100%;
+    width: 90%;
     border: 1px solid;
-    height: 40%;
+    height: 60%;
+}
+
+@media screen and (max-width: 599px) {
+    .skillContainer {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .skillLogo {
+        width: 40%;
+        height: 20%;
+        border: 1px solid;
+    }
+
+    .skillLogo {
+        width: 40%;
+        height: 20%;
+        border: 1px solid;
+    }
+
+    .skillHeader {
+        height: fit-content;
+    }
+
+    .skillDescription {
+        height: fit-content;
+    }
 }

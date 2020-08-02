@@ -9,3 +9,9 @@
     color: ivory;
     text-decoration: none;
 }
+
+@media screen and (max-width: 599px){
+    .navbar {
+        width: 100%;
+    }
+}

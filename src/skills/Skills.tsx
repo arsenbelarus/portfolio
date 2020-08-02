@@ -13,7 +13,7 @@ const Skills = (props: SkillsPropsType) => {
     return (
         <div className={style.skillsContainer}>
             <div className={style.skillsHeader}>
-                    <h1>My Skills</h1>
+                    <h1><a id="skills"/>My Skills</h1>
             </div>
             <div className={style.skillsContent}>
                     <Html/>

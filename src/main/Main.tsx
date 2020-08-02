@@ -9,6 +9,7 @@ const Main = (props: MainPropsType) => {
 
     return (
         <div className={style.mainContainer}>
+            <a id="main"/>
             <div className={style.main}>
                 <div className={style.greeting}>
                     <h2>

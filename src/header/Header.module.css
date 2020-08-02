@@ -5,7 +5,16 @@
 }
 
 .header {
-    height: 80px;
+
+    height: 100px;
     display: flex;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 599px){
+
+    .header {
+        width: 100%;
+        justify-content: center;
+    }
 }

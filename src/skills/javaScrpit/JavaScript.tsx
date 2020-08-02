@@ -13,10 +13,11 @@ const JavaScript = (props: JavaScriptPropsType) => {
 
             </div>
             <div className={style.skillHeader}>
-                JavaScript
+                <p>JavaScript</p>
             </div>
             <div className={style.skillDescription}>
-                description
+                kjkj jk lkfgj skfjg gkjflkgjk fgjfkg dfkg ldkfjg jgdkflgj dfkgj;dkf gkfdg ;kdfjg ;ldfkgdf sdfs
+                df sdfdsfgdsfgdsf df dfg gdfg dfg dsgdfg dsfg dfgdfg fgdfgsdfg sgsdfgsdfgs
             </div>
         </div>
     )

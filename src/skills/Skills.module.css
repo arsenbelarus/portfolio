@@ -1,14 +1,16 @@
 .skillsContainer {
     width: 80%;
-    height: 500px;
+    height: 100vh;
     background-color: #282c34;
-    margin: 0 auto;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .skillsHeader {
-
     width: 100%;
-    height: 20%;
+    height: 20vh;
 }
 
 .skillsHeader h1 {
@@ -18,8 +20,20 @@
 
 .skillsContent {
     width: 100%;
-    height: 80%;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 599px) {
+    .skillsContent {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

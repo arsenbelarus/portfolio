@@ -12,9 +12,9 @@ const NavBar = (props: NavBarPropsType) => {
         <div className={style.navbar}>
 
             <a href="">Main</a>
-            <a href="">Skills</a>
-            <a href="">Portfolio</a>
-            <a href="">Footer</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contacts">Contacts</a>
 
         </div>
 
