@@ -43,3 +43,14 @@
     height: 20%;
     overflow: hidden;
 }
+
+@media screen and (max-width: 599px) {
+    .specificPortfolioContainer {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .specificPortfolioProjectHeader, .specificPortfolioProjectDescription {
+        width: 80%;
+        margin: 10px auto;
+    }
+}

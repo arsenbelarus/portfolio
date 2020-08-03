@@ -1,6 +1,6 @@
 .skillContainer {
     width: 25%;
-    background-color: blue;
+    background-color: #282c34;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,12 +10,10 @@
 .skillLogo {
     width: 40%;
     height: 20%;
-    border: 1px solid;
 }
 
 .skillHeader {
     width: 100%;
-    border: 1px solid;
     text-align: center;
     height: 20%;
     display: flex;
@@ -26,33 +24,31 @@
 
 .skillDescription {
     width: 90%;
-    border: 1px solid;
     height: 60%;
 }
 
 @media screen and (max-width: 599px) {
     .skillContainer {
         width: 100%;
-        height: fit-content;
+        margin-bottom: 40px;
     }
 
     .skillLogo {
         width: 40%;
-        height: 20%;
         border: 1px solid;
+        margin-bottom: 20px;
     }
 
-    .skillLogo {
-        width: 40%;
-        height: 20%;
-        border: 1px solid;
+    .skillLogo img {
+        width: 100%;
+        height: 100%;
     }
 
     .skillHeader {
-        height: fit-content;
+        margin-bottom: 40px;
     }
 
     .skillDescription {
-        height: fit-content;
+        width: 95%;
     }
 }

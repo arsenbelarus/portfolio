@@ -25,3 +25,9 @@
 .freelanceHireMe {
 
 }
+
+@media screen and (max-width: 599px) {
+    .freelanceContainer {
+        display: none;
+    }
+}

@@ -33,3 +33,12 @@
     border: 1px solid;
     font-size: 0.8rem;
 }
+
+@media screen and (max-width: 599px) {
+    .footerContainer {
+        width: 90%;
+    }
+    .footerLinks {
+        width: 100%;
+    }
+}
