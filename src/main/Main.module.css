@@ -38,6 +38,10 @@
 }
 
 @media screen and (max-width: 599px) {
+    .mainContainer {
+        height: fit-content;
+    }
+
     .main {
         flex-direction: column;
     }
@@ -52,8 +56,6 @@
 
 @media screen and (max-width: 768px) {
     .image {
-        border: 1px solid;
-        width: 50%;
         height: 300px;
     }
 }
