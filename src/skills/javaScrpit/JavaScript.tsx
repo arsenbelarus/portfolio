@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../SpecificSkill.module.css"
+import style from "../specificSkill/SpecificSkill.module.css"
 import js from "../../assets/logos/js.jpg"
 
 type JavaScriptPropsType = {

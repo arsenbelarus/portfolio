@@ -1,0 +1,19 @@
+.upButton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    opacity: 80%;
+    background-color: darkslategrey;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    box-shadow: 0 0 1px 1px ivory;
+}
+
+.upButton a {
+    color: ivory;
+    text-decoration: none;
+    text-shadow: 0 0 1px 1px #282c34;
+}

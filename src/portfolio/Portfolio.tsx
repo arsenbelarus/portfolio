@@ -1,11 +1,15 @@
 import React from "react";
 import style from "./Portfolio.module.css"
-import Portfolio1 from "./portfolio1/Portfolio1";
-import Portfolio2 from "./portfolio2/Portfolio2";
+import {SpecificPortfolio} from "./portfolio1/SpecificPortfolio";
+import todo from "../assets/portfolio_images/todo.jpg"
+import social from "../assets/portfolio_images/social.jpg"
 
 type PortfolioPropsType = {}
 
 const Portfolio = (props: PortfolioPropsType) => {
+
+    const todoBackground = {backgroundImage: 'url(' + todo + ')'};
+    const socialBackground = {backgroundImage: 'url(' + social + ')'};
 
     return (
         <div className={style.portfolioContainer}>
@@ -13,8 +17,18 @@ const Portfolio = (props: PortfolioPropsType) => {
                 <h1><a id="portfolio"/>My Portfolio</h1>
             </div>
             <div className={style.portfolioContent}>
-                <Portfolio1/>
-                <Portfolio2/>
+                <SpecificPortfolio style={todoBackground}
+                                   link={"https://arsenbelarus.github.io/TodoList"}
+                                   projectName={"ToDo List"}
+                                   projectDescription={"Here you can observe all my skills in React/Redux. " +
+                                   "This project includes Redux Thunk, Ui=>BLL=>DAL workflow, Hooks, Material UI usage. " +
+                                   "Storybook and Unit Tests have also been used. Project is deployed on gh pages"}/>
+                <SpecificPortfolio style={socialBackground}
+                                   link={"https://arsenbelarus.github.io/social-network"}
+                                   projectName={"Social Network"}
+                                   projectDescription={`Social network is a project, where you can assess my skills to learn 
+                                   something new. Every time I've learned new feature or technology I try to implement it here.
+                                   So it's a kind of playground of my own. Deployed on gh pages`}/>
             </div>
         </div>
 

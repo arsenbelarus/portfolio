@@ -1,13 +1,13 @@
 .portfolioContainer {
     width: 80%;
-    height: 100vh;
+    height: fit-content;
     background-color: #282c34;
     margin: 0 auto 20px;
 }
 
 .portfolioHeader {
     width: 100%;
-    height: 20%;
+    height: fit-content;
 }
 
 .portfolioHeader h1 {
@@ -17,17 +17,17 @@
 
 .portfolioContent {
     width: 100%;
-    height: 80%;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 599px) {
     .portfolioContainer {
         width: 100%;
         display: flex;
-        height: auto;
         flex-direction: column;
         justify-content: space-between;
     }

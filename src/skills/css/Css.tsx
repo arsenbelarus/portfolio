@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../SpecificSkill.module.css"
+import style from "../specificSkill/SpecificSkill.module.css"
 import css from "../../assets/logos/css.jpg"
 
 type CssPropsType = {

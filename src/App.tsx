@@ -3,20 +3,21 @@ import Header from "./header/Header";
 import Main from "./main/Main";
 import Skills from "./skills/Skills";
 import Portfolio from "./portfolio/Portfolio";
-import Freelance from "./freelance/Freelance";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
+import {UpButton} from "./upButton/UpButton";
 
 function App() {
   return (
     <div>
+        <a id="main"/>
         <Header/>
         <Main/>
         <Skills/>
         <Portfolio/>
-        <Freelance/>
         <Contacts/>
         <Footer/>
+        <UpButton/>
     </div>
   );
 }
