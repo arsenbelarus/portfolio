@@ -1,0 +1,22 @@
+.header {
+    letter-spacing: .6em;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2px;
+    background-color: goldenrod;
+}
+
+@media screen and (max-width: 599px) {
+    .header {
+        letter-spacing: .3em;
+    }
+}

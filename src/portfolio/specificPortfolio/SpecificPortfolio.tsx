@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../SpecificPortfolio.module.css"
+import style from "./SpecificPortfolio.module.css"
 
 type propsType = {
     projectName: string,

@@ -3,16 +3,10 @@
     height: fit-content;
     background-color: #282c34;
     margin: 0 auto 20px;
-}
-
-.portfolioHeader {
-    width: 100%;
-    height: fit-content;
-}
-
-.portfolioHeader h1 {
-    margin-top: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .portfolioContent {

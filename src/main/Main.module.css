@@ -28,11 +28,12 @@
 .greeting p {
     letter-spacing: 3px;
     font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .image {
     width: 30%;
-    height: 500px;
+    height: 400px;
     background: url(../assets/main_image.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -41,12 +42,14 @@
     .mainContainer {
         height: fit-content;
     }
-
     .main {
         flex-direction: column;
     }
     .greeting {
         width: 100%;
+    }
+    .greeting p {
+        line-height: normal;
     }
     .image {
         width: 100%;

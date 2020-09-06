@@ -1,6 +1,6 @@
 .contactsContainer {
     width: 80%;
-    height: 400px;
+    height: fit-content;
     background-color: #282c34;
     margin: 0 auto 20px;
     display: flex;
@@ -11,22 +11,35 @@
 
 .contactsForm {
     width: 50%;
-    height: 80%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid;
     padding: 10px;
 }
 
 .contactsForm input, textarea {
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     width: 100%;
     height: 30px;
     font-family: inherit;
     font-size: 1.1rem;
+    box-shadow: 0 0 6px 3px grey;
+    border: transparent;
+}
+
+.contactsForm input:focus, textarea:focus {
+    box-shadow: 0 0 6px 3px goldenrod;
+    outline: none;
+}
+
+.contactsForm input::placeholder, textarea::placeholder {
+    letter-spacing: .2em;
+    font-style: italic;
+    opacity: .6;
+    padding: 5px;
 }
 
 .contactsForm textarea {
@@ -36,11 +49,39 @@
     max-height: 50%;
 }
 
+.message {
+    width: 70%;
+    height: 30px;
+    color: goldenrod;
+    text-align: center;
+    border: 1px solid ivory;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 1px goldenrod;
+    margin: 20px 0;
+}
+
+.contactsForm button {
+    outline: none;
+    width: 80px;
+    height: 30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    color: ivory;
+    letter-spacing: .2em;
+    font-weight: bold;
+    font-size: .7em;
+    text-align: center;
+    box-shadow: 0 0 4px 1px goldenrod;
+}
+
 @media screen and (max-width: 599px) {
     .contactsContainer {
         width: 90%;
     }
     .contactsForm {
+        width: 100%;
+    }
+    .message {
         width: 100%;
     }
 }

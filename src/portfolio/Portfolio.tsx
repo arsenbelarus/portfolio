@@ -1,8 +1,9 @@
 import React from "react";
 import style from "./Portfolio.module.css"
-import {SpecificPortfolio} from "./portfolio1/SpecificPortfolio";
+import {SpecificPortfolio} from "./specificPortfolio/SpecificPortfolio";
 import todo from "../assets/portfolio_images/todo.jpg"
 import social from "../assets/portfolio_images/social.jpg"
+import {BlockHeader} from "../common/blockHeader/BlockHeader";
 
 type PortfolioPropsType = {}
 
@@ -13,9 +14,7 @@ const Portfolio = (props: PortfolioPropsType) => {
 
     return (
         <div className={style.portfolioContainer}>
-            <div className={style.portfolioHeader}>
-                <h1><a id="portfolio"/>My Portfolio</h1>
-            </div>
+            <BlockHeader id={"portfolio"} title={"My portfolio"}/>
             <div className={style.portfolioContent}>
                 <SpecificPortfolio style={todoBackground}
                                    link={"https://arsenbelarus.github.io/TodoList"}
