@@ -13,6 +13,8 @@
     width: 225px;
     height: 225px;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .skillHeader {

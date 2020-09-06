@@ -2,7 +2,7 @@ import React from "react";
 import style from "./SpecificSkill.module.css"
 
 type HtmlPropsType = {
-    style: {background: string}
+    style: {backgroundImage: string}
     skillName: string
     skillDescription: string
 }

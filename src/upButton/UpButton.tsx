@@ -3,8 +3,10 @@ import styles from "./UpButton.module.css"
 
 export const UpButton = () => {
     return (
-        <div className={styles.upButton}>
-            <a href="#main"> UP </a>
-        </div>
+        <>
+            <a href="#main">
+                <div className={styles.upButton}></div>
+            </a>
+        </>
     )
 }

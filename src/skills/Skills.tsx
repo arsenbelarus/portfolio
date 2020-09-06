@@ -1,18 +1,18 @@
 import React from "react";
 import style from "./Skills.module.css"
 import SpecificSkill from "./specificSkill/SpecificSkill";
-import html from "../assets/logos/html.jpg";
-import css from "../assets/logos/css.jpg";
-import js from "../assets/logos/js.jpg";
+import html from "../assets/logos/html.png";
+import css from "../assets/logos/css.png";
+import js from "../assets/logos/js.png";
 import {BlockHeader} from "../common/blockHeader/BlockHeader";
 
 type SkillsPropsType = {}
 
 const Skills = (props: SkillsPropsType) => {
 
-    const htmlBackground = {background: `url(${html})`}
-    const cssBackground = {background: `url(${css})`}
-    const jsBackground = {background: `url(${js})`}
+    const htmlBackground = {backgroundImage: `url(${html})`}
+    const cssBackground = {backgroundImage: `url(${css})`}
+    const jsBackground = {backgroundImage: `url(${js})`}
 
     return (
         <div className={style.skillsContainer}>

@@ -3,9 +3,7 @@ import style from "./Contacts.module.css"
 import axios from "axios"
 import {BlockHeader} from "../common/blockHeader/BlockHeader";
 
-type HeaderPropsType = {}
-
-const Contacts = (props: HeaderPropsType) => {
+const Contacts = () => {
 
     const [inputValues, setInputValues] = useState({
         name: "",
@@ -15,6 +13,7 @@ const Contacts = (props: HeaderPropsType) => {
     })
     const [resultMessage, setResultMessage] = useState("")
     const [messageStyle, setMessageStyle] = useState("")
+    const [disabled, setDisabled] = useState(true)
     const divStyle = {
         backgroundColor: messageStyle
     }
@@ -37,20 +36,21 @@ const Contacts = (props: HeaderPropsType) => {
     })
     const submitHandler = (e: ChangeEvent<HTMLFormElement>) => {
         e.preventDefault()
+        setDisabled(false)
         axios.post("https://arsen-mail-server.herokuapp.com/sendMessage", inputValues).then(() => {
             setResultMessage("Your message has been sent. I will contact you shortly.")
             setMessageStyle("green")
+            setDisabled(true)
             setInputValues({...inputValues, name: "", message: "", email: "", phone: ""})
             setTimeout(() => {
                 setResultMessage("")
             }, 3000)
         }).catch((err) => {
-            debugger
             setResultMessage(err.message)
             setMessageStyle("darkred")
             setTimeout(() => {
                 setResultMessage("")
-            }, 3000)
+            }, 5000)
         })
     }
 
@@ -65,7 +65,7 @@ const Contacts = (props: HeaderPropsType) => {
                 <textarea name="" placeholder={"Your message"} rows={5} value={inputValues.message}
                           onChange={messageHandler}/>
                 {resultMessage && <div className={style.message} style={divStyle}>{resultMessage}</div>}
-                <button>Submit</button>
+                {disabled && <button>Submit</button>}
             </form>
         </div>
     )

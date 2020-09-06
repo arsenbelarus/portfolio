@@ -1,13 +1,8 @@
 import React from "react";
 import style from "./Main.module.css"
 
-type MainPropsType = {
-
-}
-
-const Main = (props: MainPropsType) => {
-
-    return (
+const Main = () =>
+    (
         <div className={style.mainContainer}>
             <div className={style.main}>
                 <div className={style.greeting}>
@@ -22,11 +17,7 @@ const Main = (props: MainPropsType) => {
                 </div>
             </div>
         </div>
-
-
     )
-
-}
 
 
 export default Main

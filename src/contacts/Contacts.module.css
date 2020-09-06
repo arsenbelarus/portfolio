@@ -31,7 +31,7 @@
 }
 
 .contactsForm input:focus, textarea:focus {
-    box-shadow: 0 0 6px 3px goldenrod;
+    box-shadow: 0 0 6px 3px #efc700;
     outline: none;
 }
 
@@ -50,28 +50,35 @@
 }
 
 .message {
-    width: 70%;
-    height: 30px;
-    color: goldenrod;
+    width: 50%;
+    color: #efc700;
     text-align: center;
     border: 1px solid ivory;
     border-radius: 20px;
-    box-shadow: 0 0 4px 1px goldenrod;
+    box-shadow: 0 0 4px 1px #efc700;
     margin: 20px 0;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .contactsForm button {
     outline: none;
     width: 80px;
     height: 30px;
-    background-color: goldenrod;
+    background-color: #efc700;
     border-radius: 10px;
-    color: ivory;
+    color: #fffff0;
     letter-spacing: .2em;
     font-weight: bold;
     font-size: .7em;
     text-align: center;
-    box-shadow: 0 0 4px 1px goldenrod;
+    box-shadow: 0 0 4px 1px #efc700;
+    opacity: .7;
+}
+
+.contactsForm button:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 599px) {

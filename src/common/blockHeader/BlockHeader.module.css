@@ -1,7 +1,7 @@
 .header {
     letter-spacing: .6em;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .header:before {
@@ -12,7 +12,7 @@
     left: 50%;
     transform: translate(-50%);
     height: 2px;
-    background-color: goldenrod;
+    background-color: #efc700;
 }
 
 @media screen and (max-width: 599px) {
