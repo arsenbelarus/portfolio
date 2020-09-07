@@ -4,15 +4,16 @@ import {Link} from "react-scroll"
 
 export const UpButton = () => {
   return (
-    <Link
-      to="main"
-      offset={0}
-      delay={200}
-      spy={true}
-      smooth={true}>
 
-      <button className={styles.upButton}/>
+  <Link
+    to="main"
+    offset={0}
+    delay={200}
+    spy={true}
+    smooth={true}>
 
-    </Link>
+    <button className={styles.upButton}/>
+
+  </Link>
   )
 }

@@ -46,6 +46,11 @@
     border-radius: 10%;
 }
 
+.specificPortfolioImageContainer a {
+    text-decoration: none;
+    color: ivory;
+}
+
 .specificPortfolioImageContainer .btn:hover {
     opacity: 1;
     cursor: pointer;
