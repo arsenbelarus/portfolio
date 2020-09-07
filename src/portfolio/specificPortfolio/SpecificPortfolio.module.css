@@ -31,17 +31,23 @@
 }
 
 .specificPortfolioImageContainer button {
-    opacity: 70%;
+    position: relative;
+    letter-spacing: .2em;
+    opacity: 60%;
     width: 100px;
+    padding: 10px;
+    box-sizing: border-box;
     height: 40px;
     background-color: #282c34;
     color: ivory;
     box-shadow: 0 0 2px 2px rgba(255, 255, 240, .8);
+    transition: 0.5s;
     z-index: 1;
+    border-radius: 10%;
 }
 
 .specificPortfolioImageContainer button:hover {
-    opacity: 90%;
+    opacity: 100%;
     cursor: pointer;
 }
 

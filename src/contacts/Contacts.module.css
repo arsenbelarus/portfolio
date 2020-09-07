@@ -63,7 +63,7 @@
 
 .contactsForm button {
     outline: none;
-    width: 80px;
+    width: fit-content;
     height: 30px;
     background-color: #efc700;
     border-radius: 10px;
@@ -73,7 +73,10 @@
     font-size: .7em;
     text-align: center;
     box-shadow: 0 0 4px 1px #efc700;
+    box-sizing: border-box;
     opacity: .7;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .contactsForm button:hover {
