@@ -13,7 +13,7 @@ const Portfolio = (props: PortfolioPropsType) => {
     const socialBackground = {backgroundImage: 'url(' + social + ')'};
 
     return (
-        <div className={style.portfolioContainer}>
+        <div className={`${style.portfolioContainer} "portfolio"`}>
             <BlockHeader id={"portfolio"} title={"My portfolio"}/>
             <div className={style.portfolioContent}>
                 <SpecificPortfolio style={todoBackground}

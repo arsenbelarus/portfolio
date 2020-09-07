@@ -56,7 +56,7 @@ const Contacts = () => {
 
 
     return (
-        <div className={style.contactsContainer}>
+        <div className={`${style.contactsContainer} "contacts"`}>
             <BlockHeader id={"contacts"} title={"Contacts"}/>
             <form className={style.contactsForm} onSubmit={submitHandler}>
                 <input type="text" placeholder={"Name"} value={inputValues.name} onChange={nameHandler}/>

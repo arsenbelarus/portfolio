@@ -15,7 +15,7 @@ const Skills = (props: SkillsPropsType) => {
     const jsBackground = {backgroundImage: `url(${js})`}
 
     return (
-        <div className={style.skillsContainer}>
+        <div className={`${style.skillsContainer} "skills"`}>
             <BlockHeader id={"skills"} title={"My Skills"}/>
             <div className={style.skillsContent}>
                 <SpecificSkill style={htmlBackground} skillName={"HTML"} skillDescription={"Bla Bla"}/>

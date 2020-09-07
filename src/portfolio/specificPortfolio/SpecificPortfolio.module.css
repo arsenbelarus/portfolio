@@ -30,10 +30,10 @@
     align-items: center;
 }
 
-.specificPortfolioImageContainer button {
+.specificPortfolioImageContainer .btn {
     position: relative;
     letter-spacing: .2em;
-    opacity: 60%;
+    opacity: .6;
     width: 100px;
     padding: 10px;
     box-sizing: border-box;
@@ -46,8 +46,8 @@
     border-radius: 10%;
 }
 
-.specificPortfolioImageContainer button:hover {
-    opacity: 100%;
+.specificPortfolioImageContainer .btn:hover {
+    opacity: 1;
     cursor: pointer;
 }
 

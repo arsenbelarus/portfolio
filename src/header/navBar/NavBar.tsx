@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./NavBar.module.css"
+import {Link} from "react-scroll";
 
 type NavBarPropsType = {
 
@@ -10,11 +11,33 @@ const NavBar = (props: NavBarPropsType) => {
     return (
 
         <div className={style.navbar}>
+          <a href="">Main</a>
+          <Link
+            to="skills"
+            offset={-50}
+            delay={200}
+            spy={true}
+            smooth={true}>
+            <a href="">Skills</a>
+          </Link>
 
-            <a href="">Main</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contacts">Contacts</a>
+          <Link
+            to="portfolio"
+            offset={-50}
+            delay={200}
+            spy={true}
+            smooth={true}>
+            <a href="">Portfolio</a>
+          </Link>
+
+          <Link
+            to="contacts"
+            offset={-50}
+            delay={200}
+            spy={true}
+            smooth={true}>
+            <a href="">Contacts</a>
+          </Link>
 
         </div>
 
