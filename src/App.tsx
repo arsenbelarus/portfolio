@@ -6,11 +6,10 @@ import Portfolio from "./portfolio/Portfolio";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 import {UpButton} from "./upButton/UpButton";
-import style from "./App.module.css"
 
 const App = () =>
     (
-        <div className={`${style.mainBackground}"main"`}>
+        <div className="main">
             <Header/>
             <Main/>
             <Skills/>

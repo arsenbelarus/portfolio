@@ -14,9 +14,7 @@ export const SpecificPortfolio = (props: propsType) => {
         <div className={style.specificPortfolioContainer}>
             <div className={style.specificPortfolioImageContainer} style={props.style}>
                 <div className={style.specificPortfolioImageContainerOverlay}>
-{/*                    <form action={props.link}>*/}
                         <button className={style.btn}><a href={props.link}>EXPLORE</a></button>
-                    {/*</form>*/}
                 </div>
 
             </div>
