@@ -10,7 +10,7 @@ const Main = () =>
                         Hello world
                     </h1>
                     <p>
-                        My name is <strong>Arsen Vaskanian</strong> and I'm a front-end developer
+                        My name is <strong>Arsen Vaskanian</strong> and I'm a Front-End developer
                     </p>
                 </div>
                 <div className={style.image}>
