@@ -95,3 +95,15 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .contactsContainer {
+        width: 90%;
+    }
+    .contactsForm {
+        width: 100%;
+    }
+    .message {
+        width: 100%;
+    }
+}

@@ -60,8 +60,18 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+    .mainContainer {
+        height: 80vh;
+    }
+
     .image {
+        width: 300px;
         height: 300px;
+    }
+    .greeting {
+        width: 40%;
+        padding: 0;
+        text-align: center;
     }
 }

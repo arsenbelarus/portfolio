@@ -24,15 +24,18 @@
     .skillsContainer {
         width: 90%;
         height: fit-content;
-
     }
+
     .skillsContent {
         width: 100%;
         height: fit-content;
         flex-wrap: wrap;
 
     }
-    .skillsHeader {
-        height: fit-content;
+}
+
+@media screen and (max-width: 800px) {
+    .skillsContainer {
+        width: 90%;
     }
 }

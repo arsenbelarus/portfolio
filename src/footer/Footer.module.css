@@ -24,6 +24,7 @@
     text-decoration: none;
     color: ivory;
 }
+
 .footerLinks a:hover {
     text-shadow: 1px 1px 4px #efc700;
 }
@@ -36,6 +37,17 @@
     .footerContainer {
         width: 90%;
     }
+
+    .footerLinks {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footerContainer {
+        width: 70%;
+    }
+
     .footerLinks {
         width: 100%;
     }

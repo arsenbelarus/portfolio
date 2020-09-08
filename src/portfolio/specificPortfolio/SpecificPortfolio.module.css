@@ -70,7 +70,6 @@
 
 .specificPortfolioProjectDescription {
     font-size: 1.7rem;
-
 }
 
 .specificPortfolioProjectDescription article {
@@ -92,6 +91,26 @@
 
     .specificPortfolioProjectHeader {
         font-size: 1.5rem;
+    }
+
+    .specificPortfolioProjectDescription {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .specificPortfolioContainer {
+        width: 45%;
+    }
+
+    .specificPortfolioImageContainer {
+        height: 250px;
+    }
+
+    .specificPortfolioProjectHeader {
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: .2rem;
     }
 
     .specificPortfolioProjectDescription {

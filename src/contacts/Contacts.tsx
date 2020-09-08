@@ -35,24 +35,27 @@ const Contacts = () => {
         ...inputValues,
         message: e.currentTarget.value
     })
+    const handleError = (message: string) => {
+        setResultMessage(message)
+        setMessageStyle("darkred")
+        setTimeout(() => {
+            setResultMessage("")
+        }, 3000)
+    }
     const submitHandler = (e: ChangeEvent<HTMLFormElement>) => {
         e.preventDefault()
-        setDisabled(true)
-        axios.post("https://arsen-mail-server.herokuapp.com/sendMessage", inputValues).then(() => {
-            setResultMessage("Your message has been sent. I will contact you shortly.")
-            setMessageStyle("green")
-            setDisabled(false)
-            setInputValues({...inputValues, name: "", message: "", email: "", phone: ""})
-            setTimeout(() => {
-                setResultMessage("")
-            }, 3000)
-        }).catch((err) => {
-            setResultMessage(err.message)
-            setMessageStyle("darkred")
-            setTimeout(() => {
-                setResultMessage("")
-            }, 5000)
-        })
+        if (inputValues.message.trim() && inputValues.phone.trim() && inputValues.name.trim() && inputValues.email.trim()) {
+            setDisabled(true)
+            axios.post("https://arsen-mail-server.herokuapp.com/sendMessage", inputValues).then(() => {
+                setResultMessage("Your message has been sent. I will contact you shortly.")
+                setMessageStyle("green")
+                setDisabled(false)
+                setInputValues({...inputValues, name: "", message: "", email: "", phone: ""})
+                setTimeout(() => {
+                    setResultMessage("")
+                }, 3000)
+            }).catch((err) => {handleError(err.message)})
+        } else {handleError("All fields are required")}
     }
 
 
