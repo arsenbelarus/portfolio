@@ -30,6 +30,9 @@
 
 .skillDescription {
     height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 599px) {
@@ -38,7 +41,8 @@
     }
 
     .skillLogo {
-
+        width: 170px;
+        height: 170px;
     }
 
     .skillHeader {

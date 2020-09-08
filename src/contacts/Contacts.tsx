@@ -2,6 +2,7 @@ import React, {ChangeEvent, useState} from "react";
 import style from "./Contacts.module.css"
 import axios from "axios"
 import {BlockHeader} from "../common/blockHeader/BlockHeader";
+import {Loader} from "../common/loader/Loader";
 
 const Contacts = () => {
 
@@ -13,7 +14,7 @@ const Contacts = () => {
     })
     const [resultMessage, setResultMessage] = useState("")
     const [messageStyle, setMessageStyle] = useState("")
-    const [disabled, setDisabled] = useState(true)
+    const [disabled, setDisabled] = useState(false)
     const divStyle = {
         backgroundColor: messageStyle
     }
@@ -36,11 +37,11 @@ const Contacts = () => {
     })
     const submitHandler = (e: ChangeEvent<HTMLFormElement>) => {
         e.preventDefault()
-        setDisabled(false)
+        setDisabled(true)
         axios.post("https://arsen-mail-server.herokuapp.com/sendMessage", inputValues).then(() => {
             setResultMessage("Your message has been sent. I will contact you shortly.")
             setMessageStyle("green")
-            setDisabled(true)
+            setDisabled(false)
             setInputValues({...inputValues, name: "", message: "", email: "", phone: ""})
             setTimeout(() => {
                 setResultMessage("")
@@ -59,13 +60,16 @@ const Contacts = () => {
         <div className={`${style.contactsContainer} "contacts"`}>
             <BlockHeader id={"contacts"} title={"Contacts"}/>
             <form className={style.contactsForm} onSubmit={submitHandler}>
-                <input type="text" placeholder={"Name"} value={inputValues.name} onChange={nameHandler}/>
-                <input type="email" placeholder={"E-mail"} value={inputValues.email} onChange={emailHandler}/>
-                <input type="tel" placeholder={"Phone"} value={inputValues.phone} onChange={phoneHandler}/>
+                <input type="text" placeholder={"Name"} value={inputValues.name}
+                       onChange={nameHandler} disabled={disabled}/>
+                <input type="email" placeholder={"E-mail"} value={inputValues.email}
+                       onChange={emailHandler} disabled={disabled}/>
+                <input type="tel" placeholder={"Phone"} value={inputValues.phone}
+                       onChange={phoneHandler} disabled={disabled}/>
                 <textarea name="" placeholder={"Your message"} rows={5} value={inputValues.message}
-                          onChange={messageHandler}/>
+                          onChange={messageHandler} disabled={disabled}/>
                 {resultMessage && <div className={style.message} style={divStyle}>{resultMessage}</div>}
-                {disabled && <button>Submit</button>}
+                {disabled ? <Loader/> : <button className={style.btn}>Submit</button> }
             </form>
         </div>
     )

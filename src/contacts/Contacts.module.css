@@ -61,7 +61,7 @@
     padding: 5px;
 }
 
-.contactsForm button {
+.contactsForm .btn {
     outline: none;
     width: fit-content;
     height: 30px;

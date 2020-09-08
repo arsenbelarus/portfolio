@@ -9,8 +9,7 @@ import {UpButton} from "./upButton/UpButton";
 
 const App = () =>
     (
-        <div>
-            <a id="main"> </a>
+        <div className={"main"}>
             <Header/>
             <Main/>
             <Skills/>

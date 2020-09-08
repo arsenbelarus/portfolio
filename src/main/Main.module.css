@@ -9,15 +9,15 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
 
 .greeting {
-    width: 30%;
+    width: 50%;
     color: ivory;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .greeting h1 {
@@ -47,6 +47,7 @@
     }
     .greeting {
         width: 100%;
+        padding: 1rem;
     }
     .greeting p {
         line-height: normal;
