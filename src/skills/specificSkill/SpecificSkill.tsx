@@ -16,9 +16,9 @@ const SpecificSkill = (props: HtmlPropsType) => {
             <div className={style.skillLogo} style={props.style}>
 
             </div>
-            <div className={style.skillHeader}>
+{/*            <div className={style.skillHeader}>
                 <p>{props.skillName}</p>
-            </div>
+            </div>*/}
             <div className={style.skillDescription}>
                 {props.skillDescription}
             </div>
