@@ -78,14 +78,14 @@
     line-height: 2rem;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 540px) {
     .specificPortfolioContainer {
         width: 90%;
         margin-bottom: 50px;
     }
 
     .specificPortfolioProjectHeader, .specificPortfolioProjectDescription {
-        width: 80%;
+        width: 100%;
         margin: 20px auto;
     }
 
@@ -97,14 +97,14 @@
         font-size: 1.2rem;
     }
 }
-/*
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 768px) {
     .specificPortfolioContainer {
-        width: 45%;
+        width: 80%;
     }
 
     .specificPortfolioImageContainer {
-        height: 250px;
+        height: 300px;
     }
 
     .specificPortfolioProjectHeader {
@@ -116,4 +116,24 @@
     .specificPortfolioProjectDescription {
         font-size: 1.2rem;
     }
-}*/
+}
+
+@media screen and (max-width: 1024px) {
+    .specificPortfolioContainer {
+        width: 80%;
+    }
+
+    .specificPortfolioImageContainer {
+        height: 300px;
+    }
+
+    .specificPortfolioProjectHeader {
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: .2rem;
+    }
+
+    .specificPortfolioProjectDescription {
+        font-size: 1.2rem;
+    }
+}

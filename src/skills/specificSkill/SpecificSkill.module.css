@@ -34,7 +34,7 @@
     padding: 1rem;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 540px) {
     .skillContainer {
         width: 100%;
         margin-bottom: 50px;
@@ -56,12 +56,49 @@
         text-align: justify;
     }
 }
-/*
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+    .skillContainer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
     .skillLogo {
         width: 170px;
         height: 170px;
-        margin-top: 20px;
     }
-}*/
+
+    .skillHeader {
+        margin-bottom: 40px;
+    }
+
+    .skillDescription {
+        width: 95%;
+        height: fit-content;
+        padding: 0;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skillContainer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .skillLogo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .skillHeader {
+        margin-bottom: 40px;
+    }
+
+    .skillDescription {
+        width: 95%;
+        height: fit-content;
+        padding: 0;
+        text-align: justify;
+    }
+}

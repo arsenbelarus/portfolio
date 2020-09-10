@@ -33,7 +33,7 @@
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 540px) {
     .footerContainer {
         width: 90%;
     }
@@ -42,13 +42,27 @@
         width: 100%;
     }
 }
-/*
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 768px) {
     .footerContainer {
-        width: 70%;
+        width: 80%;
+        margin-top: 40px;
     }
 
     .footerLinks {
         width: 100%;
+        margin-bottom: 40px;
     }
-}*/
+}
+
+@media screen and (max-width: 1024px) {
+    .footerContainer {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .footerLinks {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}

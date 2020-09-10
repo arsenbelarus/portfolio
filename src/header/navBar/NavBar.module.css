@@ -10,12 +10,18 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 540px){
     .navbar {
         width: 100%;
     }
 }
 @media screen and (max-width: 768px){
+    .navbar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .navbar {
         width: 100%;
     }

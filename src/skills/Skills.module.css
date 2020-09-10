@@ -19,7 +19,7 @@
 
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 540px) {
 
     .skillsContainer {
         width: 90%;
@@ -30,13 +30,31 @@
         width: 100%;
         height: fit-content;
         flex-wrap: wrap;
-
     }
 }
-/*
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .skillsContainer {
         width: 90%;
+        height: fit-content;
     }
-}*/
+
+    .skillsContent {
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skillsContainer {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .skillsContent {
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+}

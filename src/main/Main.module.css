@@ -16,7 +16,6 @@
 .greeting {
     width: 50%;
     color: ivory;
-
 }
 
 .greeting h1 {
@@ -48,9 +47,9 @@
     right: -5%;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 540px) {
     .mainContainer {
-        height: fit-content;
+        height: 90vh;
     }
     .main {
         flex-direction: column;
@@ -75,20 +74,25 @@
         right: -5%;
     }
 }
-/*
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .mainContainer {
-        height: 80vh;
+        width: 90%;
+    }
+
+    .image {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainContainer {
+        width: 90%;
     }
 
     .image {
         width: 300px;
-        height: 300px;
+        height: 350px;
     }
-    .greeting {
-        width: 40%;
-        padding: 0;
-        text-align: center;
-    }
-}*/
+}
