@@ -44,7 +44,7 @@ const Contacts = () => {
     }
     const submitHandler = (e: ChangeEvent<HTMLFormElement>) => {
         e.preventDefault()
-        if (inputValues.message.trim() && inputValues.phone.trim() && inputValues.name.trim() && inputValues.email.trim()) {
+        if (inputValues.message.trim() && inputValues.name.trim() && inputValues.email.trim()) {
             setDisabled(true)
             axios.post("https://arsen-mail-server.herokuapp.com/sendMessage", inputValues).then(() => {
                 setResultMessage("Your message has been sent. I will contact you shortly.")
@@ -55,7 +55,7 @@ const Contacts = () => {
                     setResultMessage("")
                 }, 3000)
             }).catch((err) => {handleError(err.message)})
-        } else {handleError("All fields are required")}
+        } else {handleError("Name, Email and Message are required")}
     }
 
 
@@ -67,7 +67,7 @@ const Contacts = () => {
                        onChange={nameHandler} disabled={disabled}/>
                 <input type="email" placeholder={"E-mail"} value={inputValues.email}
                        onChange={emailHandler} disabled={disabled}/>
-                <input type="tel" placeholder={"Phone"} value={inputValues.phone}
+                <input type="tel" placeholder={"Phone (optional)"} value={inputValues.phone}
                        onChange={phoneHandler} disabled={disabled}/>
                 <textarea name="" placeholder={"Your message"} rows={5} value={inputValues.message}
                           onChange={messageHandler} disabled={disabled}/>
