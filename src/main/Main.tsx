@@ -8,7 +8,7 @@ const Main = () => {
   const saveFile = () => {
     debugger
     FileSaver.saveAs(
-      "./CV.pdf",
+      "https://arsenbelarus.github.io/portfolio/CV.pdf",
       "Arsen Vaskanian CV.pdf"
     )
   }
