@@ -6,9 +6,10 @@ import FileSaver from 'file-saver';
 
 const Main = () => {
   const saveFile = () => {
+    debugger
     FileSaver.saveAs(
-      "https://arsenbelarus.github.io/portfolio/public/Arsen Vaskanian Front-End CV.pdf",
-      "Arsen Vaskanian's CV.pdf"
+      "./CV.pdf",
+      "Arsen Vaskanian CV.pdf"
     )
   }
     return (

@@ -5,6 +5,6 @@ interface ButtonPropsType extends ButtonHTMLAttributes<HTMLButtonElement> {
   name: string,
 }
 
-export const Button: FC<ButtonPropsType> = ({name, ...rest}) => {
-  return <button className={style.btn}>{name}</button>;
+export const Button: FC<ButtonPropsType> = ({name, onClick, ...rest}) => {
+  return <button className={style.btn} onClick={onClick}>{name}</button>;
 }
