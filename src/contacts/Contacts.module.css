@@ -59,29 +59,6 @@
     padding: 5px;
 }
 
-.contactsForm .btn {
-    outline: none;
-    width: fit-content;
-    height: 30px;
-    background-color: #efc700;
-    border-radius: 10px;
-    color: #fffff0;
-    letter-spacing: .2em;
-    font-weight: bold;
-    font-size: .7em;
-    text-align: center;
-    box-shadow: 0 0 4px 1px #efc700;
-    box-sizing: border-box;
-    opacity: .7;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-.contactsForm button:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 540px) {
     .contactsContainer {
         width: 90%;
@@ -108,11 +85,6 @@
     .message {
         width: 100%;
     }
-
-    .contactsForm .btn {
-        width: 40%;
-        height: 40px;
-    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -126,10 +98,5 @@
 
     .message {
         width: 100%;
-    }
-
-    .contactsForm .btn {
-        width: 40%;
-        height: 40px;
     }
 }

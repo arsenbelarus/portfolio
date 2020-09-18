@@ -3,6 +3,9 @@ import style from "./Contacts.module.css"
 import axios from "axios"
 import {BlockHeader} from "../common/blockHeader/BlockHeader";
 import {Loader} from "../common/loader/Loader";
+import { Button } from "../common/button/Button";
+
+
 
 const Contacts = () => {
 
@@ -72,7 +75,7 @@ const Contacts = () => {
                 <textarea name="" placeholder={"Your message"} rows={5} value={inputValues.message}
                           onChange={messageHandler} disabled={disabled}/>
                 {resultMessage && <div className={style.message} style={divStyle}>{resultMessage}</div>}
-                {disabled ? <Loader/> : <button className={style.btn}>Submit</button> }
+                {disabled ? <Loader/> : <Button name={"SUBMIT"} /> }
             </form>
         </div>
     )
