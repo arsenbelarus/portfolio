@@ -6,7 +6,6 @@ import FileSaver from 'file-saver';
 
 const Main = () => {
   const saveFile = () => {
-    debugger
     FileSaver.saveAs(
       "https://arsenbelarus.github.io/portfolio/CV.pdf",
       "Arsen Vaskanian CV.pdf"
@@ -22,7 +21,7 @@ const Main = () => {
             <p>
               My name is <strong>Arsen Vaskanian</strong> and I'm a Front-End developer
             </p>
-            <Button name={"Download CV"} onClick={saveFile}/>
+            <Button name={"Download CV"} onClick={saveFile} onTouchEnd={saveFile} onTouchStart={saveFile}/>
           </div>
           <div className={style.image}>
           </div>
