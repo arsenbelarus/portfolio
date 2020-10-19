@@ -9,6 +9,7 @@ import {UpButton} from "./upButton/UpButton";
 
 const App = () => {
   const [isTop, setIsTop] = useState(false)
+  const Fade = require('react-reveal/Fade')
   useEffect(() => {
     document.addEventListener("scroll", () => {
       const position = window.scrollY > 400
@@ -22,8 +23,12 @@ const App = () => {
     <div className="main">
       <Header/>
       <Main/>
-      <Skills/>
-      <Portfolio/>
+      <Fade left>
+        <Skills/>
+      </Fade>
+      <Fade right>
+        <Portfolio/>
+      </Fade>
       <Contacts/>
       <Footer/>
       {isTop ? <UpButton/> : null}

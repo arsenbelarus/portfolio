@@ -13,10 +13,12 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-scroll": "^1.8.0",
+    "@types/reveal": "^3.3.33",
     "axios": "^0.20.0",
     "file-saver": "^2.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.8.1",
     "typescript": "~3.7.2"
