@@ -5,9 +5,10 @@ import style from './MobileMenu.module.css';
 
 type MobileOverlayProps = {
 	options: NavOptions[];
+	onBurgerClick(): void
 };
 
-const MobileOverlay = ({ options }: MobileOverlayProps) => {
+const MobileOverlay = ({ options, onBurgerClick }: MobileOverlayProps) => {
 	return (
 		<div className={style.mobileOverlay}>
 			{options.map((option) => (
@@ -18,6 +19,7 @@ const MobileOverlay = ({ options }: MobileOverlayProps) => {
 					delay={200}
 					spy={true}
 					smooth={true}
+					onClick={onBurgerClick}
 				>
 					{option.label}
 				</Link>
