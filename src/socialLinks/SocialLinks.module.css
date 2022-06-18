@@ -1,0 +1,24 @@
+.socialLinksContainer {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	z-index: 1000;
+}
+
+.socialLink {
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	color: white;
+	position: relative;
+	width: 100px;
+	height: 50px;
+	left: -70px;
+	transition: 0.5s ease;
+}
+
+.socialLink:hover {
+	left: 0;
+}

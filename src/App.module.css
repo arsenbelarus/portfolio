@@ -1,6 +1,4 @@
-.mainBackground {
-    background-image: url(../src/assets/portfolio_images/cool-background.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+.mainContainer {
+    max-width: 1200px;
+    margin: 0 auto;
 }

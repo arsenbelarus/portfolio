@@ -1,5 +1,7 @@
 .btn {
     outline: none;
+    border: none;
+    padding: 5px 10px;
     width: fit-content;
     height: 30px;
     background-color: #efc700;
@@ -11,14 +13,13 @@
     text-align: center;
     box-shadow: 0 0 4px 1px #efc700;
     box-sizing: content-box;
-    opacity: .7;
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    opacity: 1;
     cursor: pointer;
+    padding: 5px 20px;
 }
 
 @media screen and (max-width: 768px) {
