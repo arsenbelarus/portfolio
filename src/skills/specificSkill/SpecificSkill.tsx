@@ -1,14 +1,14 @@
 import React from 'react';
-import { SpecificSkillType } from '../../types/types';
+import { SpecificSkillPortfolioType } from '../../types/types';
 import style from './SpecificSkill.module.css';
 
-const SpecificSkill = (props: SpecificSkillType) => {
+const SpecificSkill = (props: SpecificSkillPortfolioType) => {
 	return (
 		<div className={style.skillContainer}>
 			<div className={style.skillLogo}>
-				<img src={props.img} alt={props.skillName} />
+				<img src={props.img} alt={props.name} />
 			</div>
-			<div className={style.skillDescription}>{props.skillDescription}</div>
+			<div className={style.description}>{props.description}</div>
 		</div>
 	);
 };

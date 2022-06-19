@@ -3,8 +3,9 @@ export type NavOptions = {
 	to: string;
 };
 
-export type SpecificSkillType = {
+export type SpecificSkillPortfolioType = {
 	img: string;
-	skillName: string;
-	skillDescription: string;
+	link?: string;
+	name: string;
+	description: string;
 };

@@ -18,7 +18,7 @@
 	object-fit: contain;
 }
 
-.skillDescription {
+.description {
 	text-align: justify;
 	height: 160px;
 	padding: 1rem;
@@ -30,7 +30,7 @@
 		height: 100px;
 	}
 
-	.skillDescription {
+	.description {
 		font-size: 1.2rem;
 	}
 }
@@ -38,14 +38,14 @@
 @media screen and (max-width: 1024px) {
 	.skillContainer {
 		width: 100%;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 	}
 
 	.skillHeader {
 		margin-bottom: 40px;
 	}
 
-	.skillDescription {
+	.description {
 		width: 95%;
 		padding: 0 10px;
 	}
@@ -57,7 +57,7 @@
 		height: 80px;
 	}
 
-	.skillDescription {
+	.description {
 		font-size: 1rem;
 	}
 }

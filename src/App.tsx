@@ -9,6 +9,7 @@ import { UpButton } from './upButton/UpButton';
 import SocialLinks from './socialLinks/SocialLinks';
 import style from './App.module.css';
 import { skills } from './consts/skills';
+import { portfolios } from './consts/portfolios';
 
 const App = () => {
 	const [isTop, setIsTop] = useState(false);
@@ -32,7 +33,7 @@ const App = () => {
 					<Skills skills={skills} />
 				</Fade>
 				<Fade right>
-					<Portfolio />
+					<Portfolio portfolios={portfolios} />
 				</Fade>
 				<Contacts />
 				<Footer />

@@ -3,10 +3,10 @@ import style from './Skills.module.css';
 import SpecificSkill from './specificSkill/SpecificSkill';
 
 import { BlockHeader } from '../common/blockHeader/BlockHeader';
-import { SpecificSkillType } from '../types/types';
+import { SpecificSkillPortfolioType } from '../types/types';
 
 type SkillsPropsType = {
-	skills: SpecificSkillType[];
+	skills: SpecificSkillPortfolioType[];
 };
 
 const Skills = ({ skills }: SkillsPropsType) => {
@@ -16,9 +16,9 @@ const Skills = ({ skills }: SkillsPropsType) => {
 			<div className={style.skillsContent}>
 				{skills.map((skill) => (
 					<SpecificSkill
-						skillName={skill.skillName}
+						name={skill.name}
 						img={skill.img}
-						skillDescription={skill.skillDescription}
+						description={skill.description}
 					/>
 				))}
 			</div>

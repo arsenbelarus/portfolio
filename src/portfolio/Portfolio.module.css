@@ -1,61 +1,13 @@
-.portfolioContainer {
-    width: 80%;
-    height: fit-content;
-    background-color: #282c34;
-    margin: 0 auto 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .portfolioContent {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-@media screen and (max-width: 540px) {
-    .portfolioContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .portfolioContent {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .portfolioContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .portfolioContent {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	color: var(--color-primary);
 }
 
 @media screen and (max-width: 1024px) {
-    .portfolioContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .portfolioContent {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
+	.portfolioContent {
+		justify-content: center;
+	}
 }
