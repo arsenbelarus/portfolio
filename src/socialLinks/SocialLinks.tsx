@@ -1,29 +1,38 @@
 import React from 'react';
 import style from './SocialLinks.module.css';
+import {
+	AiOutlineFacebook,
+	AiOutlineInstagram,
+	AiOutlineLinkedin,
+	AiOutlineGithub,
+} from 'react-icons/ai';
 
 const SocialLinks = () => {
 	return (
 		<div className={style.socialLinksContainer}>
+				<a
+					className={[style.socialLink, style.facebook].join(' ')}
+					href='https://www.facebook.com/arsen.voskanyan.79'
+				>
+					<AiOutlineFacebook size={26} />
+				</a>
 			<a
-				className={style.socialLink}
-				href='https://www.facebook.com/arsen.voskanyan.79'
-			>
-				Facebook
-			</a>
-			<a
-				className={style.socialLink}
+				className={[style.socialLink, style.instagram].join(' ')}
 				href='https://www.instagram.com/arsenvaskanian/'
 			>
-				Instagram
+				<AiOutlineInstagram size={26} />
 			</a>
 			<a
-				className={style.socialLink}
+				className={[style.socialLink, style.linkedin].join(' ')}
 				href='https://www.linkedin.com/in/arsen-vaskanian'
 			>
-				LinkedIn
+				<AiOutlineLinkedin size={26} />
 			</a>
-			<a className={style.socialLink} href='https://vk.com/arsen_voskanyan'>
-				VK
+			<a
+				className={[style.socialLink, style.github].join(' ')}
+				href='https://vk.com/arsen_voskanyan'
+			>
+				<AiOutlineGithub size={26} />
 			</a>
 		</div>
 	);
