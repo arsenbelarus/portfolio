@@ -1,7 +1,4 @@
-export type NavOptions = {
-	label: string;
-	to: string;
-};
+import { NavOptions } from '../types/types';
 
 export const navOptions: NavOptions[] = [
 	{ label: 'Main', to: 'main' },

@@ -9,10 +9,10 @@ type BlockHeaderPropsType = {
 export const BlockHeader = (props: BlockHeaderPropsType) => {
     return (
         <div className={style.header}>
-            <h1>
+            <h2>
                 <a id={`${props.id}`}/>
                 {props.title}
-            </h1>
+            </h2>
         </div>
     )
 }

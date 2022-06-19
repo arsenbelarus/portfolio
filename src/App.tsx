@@ -8,6 +8,7 @@ import Footer from './footer/Footer';
 import { UpButton } from './upButton/UpButton';
 import SocialLinks from './socialLinks/SocialLinks';
 import style from './App.module.css';
+import { skills } from './consts/skills';
 
 const App = () => {
 	const [isTop, setIsTop] = useState(false);
@@ -28,7 +29,7 @@ const App = () => {
 				<Header />
 				<Main />
 				<Fade left>
-					<Skills />
+					<Skills skills={skills} />
 				</Fade>
 				<Fade right>
 					<Portfolio />

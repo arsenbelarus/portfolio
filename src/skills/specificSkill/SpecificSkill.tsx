@@ -1,30 +1,16 @@
-import React from "react";
-import style from "./SpecificSkill.module.css"
+import React from 'react';
+import { SpecificSkillType } from '../../types/types';
+import style from './SpecificSkill.module.css';
 
-type HtmlPropsType = {
-    style: {backgroundImage: string}
-    skillName: string
-    skillDescription: string
-}
+const SpecificSkill = (props: SpecificSkillType) => {
+	return (
+		<div className={style.skillContainer}>
+			<div className={style.skillLogo}>
+				<img src={props.img} alt={props.skillName} />
+			</div>
+			<div className={style.skillDescription}>{props.skillDescription}</div>
+		</div>
+	);
+};
 
-const SpecificSkill = (props: HtmlPropsType) => {
-
-
-
-    return (
-        <div className={style.skillContainer}>
-            <div className={style.skillLogo} style={props.style}>
-
-            </div>
-{/*            <div className={style.skillHeader}>
-                <p>{props.skillName}</p>
-            </div>*/}
-            <div className={style.skillDescription}>
-                {props.skillDescription}
-            </div>
-        </div>
-
-    )
-}
-
-export default SpecificSkill
+export default SpecificSkill;

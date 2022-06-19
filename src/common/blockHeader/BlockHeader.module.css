@@ -1,18 +1,21 @@
 .header {
+    font-size: 1.3em;
     letter-spacing: .6em;
     position: relative;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+    color: var(--color-primary);
 }
 
 .header:before {
     content: "";
     position: absolute;
     width: 80%;
-    bottom: 10%;
+    top: 60px;
     left: 50%;
     transform: translate(-50%);
     height: 2px;
-    background-color: #efc700;
+    background-color: var(--color-secondary);
 }
 
 @media screen and (max-width: 599px) {

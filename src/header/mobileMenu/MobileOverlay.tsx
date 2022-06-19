@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { NavOptions } from '../../consts/navOptions';
+import { NavOptions } from '../../types/types';
 import style from './MobileMenu.module.css';
 
 type MobileOverlayProps = {
 	options: NavOptions[];
-	onBurgerClick(): void
+	onBurgerClick(): void;
 };
 
 const MobileOverlay = ({ options, onBurgerClick }: MobileOverlayProps) => {
