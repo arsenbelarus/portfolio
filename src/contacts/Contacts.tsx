@@ -1,85 +1,68 @@
-import React, {ChangeEvent, useState} from "react";
-import style from "./Contacts.module.css"
-import axios from "axios"
-import {BlockHeader} from "../common/blockHeader/BlockHeader";
-import {Loader} from "../common/loader/Loader";
-import { Button } from "../common/button/Button";
-
-
+import React, { ChangeEvent, useState } from 'react';
+import style from './Contacts.module.css';
+import { BlockHeader } from '../common/blockHeader/BlockHeader';
+import { Button } from '../common/button/Button';
 
 const Contacts = () => {
+	const [inputValues, setInputValues] = useState({
+		name: '',
+		email: '',
+		phone: '',
+		message: '',
+	});
+	const isButtonEnabled =
+		inputValues.name.trim() && inputValues.email && inputValues.message;
 
-    const [inputValues, setInputValues] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        message: ""
-    })
-    const [resultMessage, setResultMessage] = useState("")
-    const [messageStyle, setMessageStyle] = useState("")
-    const [disabled, setDisabled] = useState(false)
-    const divStyle = {
-        backgroundColor: messageStyle
-    }
+	const changeHandler = (
+		e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) =>
+		setInputValues({
+			...inputValues,
+			[e.currentTarget.name]: e.currentTarget.value,
+		});
 
-    const nameHandler = (e: ChangeEvent<HTMLInputElement>) => setInputValues({
-        ...inputValues,
-        name: e.currentTarget.value
-    })
-    const emailHandler = (e: ChangeEvent<HTMLInputElement>) => setInputValues({
-        ...inputValues,
-        email: e.currentTarget.value
-    })
-    const phoneHandler = (e: ChangeEvent<HTMLInputElement>) => setInputValues({
-        ...inputValues,
-        phone: e.currentTarget.value
-    })
-    const messageHandler = (e: ChangeEvent<HTMLTextAreaElement>) => setInputValues({
-        ...inputValues,
-        message: e.currentTarget.value
-    })
-    const handleError = (message: string) => {
-        setResultMessage(message)
-        setMessageStyle("darkred")
-        setTimeout(() => {
-            setResultMessage("")
-        }, 3000)
-    }
-    const submitHandler = (e: ChangeEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        if (inputValues.message.trim() && inputValues.name.trim() && inputValues.email.trim()) {
-            setDisabled(true)
-            axios.post("https://arsen-mail-server.herokuapp.com/sendMessage", inputValues).then(() => {
-                setResultMessage("Your message has been sent. I will contact you shortly.")
-                setMessageStyle("green")
-                setDisabled(false)
-                setInputValues({...inputValues, name: "", message: "", email: "", phone: ""})
-                setTimeout(() => {
-                    setResultMessage("")
-                }, 3000)
-            }).catch((err) => {handleError(err.message)})
-        } else {handleError("Name, Email and Message are required")}
-    }
+	return (
+		<>
+			<BlockHeader id={'contacts'} title={'Contacts'} />
+			<div className={style.contactsContainer}>
+				<form
+					action='https://formsubmit.co/759bb574a14f19dfb48296653e6c1c40'
+					method='POST'
+					className={style.contactsForm}
+				>
+					<input
+						type='text'
+						placeholder={'Name'}
+						name='name'
+						value={inputValues.name}
+						onChange={changeHandler}
+					/>
+					<input
+						type='email'
+						placeholder={'E-mail'}
+						name='email'
+						value={inputValues.email}
+						onChange={changeHandler}
+					/>
+					<input
+						type='tel'
+						placeholder={'Phone (optional)'}
+						name='phone'
+						value={inputValues.phone}
+						onChange={changeHandler}
+					/>
+					<textarea
+						name='message'
+						placeholder={'Your message'}
+						rows={5}
+						value={inputValues.message}
+						onChange={changeHandler}
+					/>
+					<Button name='SUBMIT' disabled={!isButtonEnabled} />
+				</form>
+			</div>
+		</>
+	);
+};
 
-
-    return (
-        <div className={`${style.contactsContainer} "contacts"`}>
-            <BlockHeader id={"contacts"} title={"Contacts"}/>
-            <form className={style.contactsForm} onSubmit={submitHandler}>
-                <input type="text" placeholder={"Name"} value={inputValues.name}
-                       onChange={nameHandler} disabled={disabled}/>
-                <input type="email" placeholder={"E-mail"} value={inputValues.email}
-                       onChange={emailHandler} disabled={disabled}/>
-                <input type="tel" placeholder={"Phone (optional)"} value={inputValues.phone}
-                       onChange={phoneHandler} disabled={disabled}/>
-                <textarea name="" placeholder={"Your message"} rows={5} value={inputValues.message}
-                          onChange={messageHandler} disabled={disabled}/>
-                {resultMessage && <div className={style.message} style={divStyle}>{resultMessage}</div>}
-                {disabled ? <Loader/> : <Button name={"SUBMIT"} /> }
-            </form>
-        </div>
-    )
-}
-
-
-export default Contacts
+export default Contacts;

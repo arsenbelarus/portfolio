@@ -22,6 +22,12 @@
     padding: 5px 20px;
 }
 
+.btn.disabled {
+    pointer-events: none;
+    background-color: grey;
+    box-shadow: none;
+}
+
 @media screen and (max-width: 768px) {
     .btn {
         width: 40%;
