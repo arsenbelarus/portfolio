@@ -26,7 +26,7 @@ const App = () => {
 	return (
 		<>
 			<SocialLinks />
-			<div className={style.mainContainer}>
+			<div className={style.mainContainer} id='main'>
 				<Header />
 				<Main />
 				<Fade left>

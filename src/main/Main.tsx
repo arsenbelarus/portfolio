@@ -13,7 +13,6 @@ const Main = () => {
 		);
 	};
 	return (
-		// <div className={style.mainContainer}>
 		<div className={style.main}>
 			<div className={style.greeting}>
 				<h1>Hello world</h1>
@@ -32,7 +31,6 @@ const Main = () => {
 				<img src={Avatar} alt='main_image' />
 			</div>
 		</div>
-		// </div>
 	);
 };
 

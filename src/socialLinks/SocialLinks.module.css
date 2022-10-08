@@ -7,10 +7,6 @@
 	z-index: 1000;
 }
 
-.socialLinkContainer {
-
-}
-
 .socialLink {
 	text-decoration: none;
 	text-align: right;
@@ -39,7 +35,8 @@
 }
 
 .facebook {
-	background-color: #4267b2;
+	background-color: var(--color-secondary);
+	opacity: .3;
 }
 
 .instagram {

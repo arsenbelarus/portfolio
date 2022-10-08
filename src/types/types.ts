@@ -1,3 +1,5 @@
+import { IconType } from "react-icons";
+
 export type NavOptions = {
 	label: string;
 	to: string;
@@ -9,3 +11,8 @@ export type SpecificSkillPortfolioType = {
 	name: string;
 	description: string;
 };
+
+export type SocialLink = {
+	link: string;
+	icon: IconType;
+}
